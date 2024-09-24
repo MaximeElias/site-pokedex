@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Liste des Pokémon</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Pokédex</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="liste.html">Tous les Pokémon</a></li>
+                <li><a href="#">Types</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box welcome-section">
+            <h2>Bienvenue dans le Pokédex !</h2>
+            <p>
+                Découvrez tous les Pokémon de chaque génération. <strong style="color: red;">Important :</strong> 
+                N'hésitez pas à explorer et à apprendre sur vos Pokémon préférés !
+            </p>
+        </div>
+
+        <div class="button-container">
+            <button onclick="window.location.href='liste.html#premiere-generation'">Génération 1</button>
+            <button onclick="window.location.href='liste.html#deuxieme-generation'">Génération 2</button>
+            <button onclick="window.location.href='liste.html#troisieme-generation'">Génération 3</button>
+            <button onclick="window.location.href='liste.html#quatrieme-generation'">Génération 4</button>
+            <button onclick="window.location.href='liste.html#cinquieme-generation'">Génération 5</button>
+            <button onclick="window.location.href='liste.html#sixieme-generation'">Génération 6</button>
+            <button onclick="window.location.href='liste.html#septieme-generation'">Génération 7</button>
+            <button onclick="window.location.href='liste.html#huitieme-generation'">Génération 8</button>
+            <button onclick="window.location.href='liste.html#neuvieme-generation'">Génération 9</button>
+        </div>
+
+        <div class="box pokemon-list-section">
+            <h2>Liste des Pokémon populaires</h2>
+            <ul class="pokemon-list">
+                <li>
+                    <a href="bulbizarre.html">
+                        <img src="Images/bulbizarre.png" alt="Bulbizarre" class="pokemon-image">
+                        Bulbizarre
+                    </a>
+                </li>
+                <li>
+                    <a href="herbizarre.html">
+                        <img src="Images/carapuce.png" alt="Carapuce" class="pokemon-image">
+                        Carapuce
+                    </a>
+                </li>
+                <li>
+                    <a href="florizarre.html">
+                        <img src="Images/salameche.png" alt="Salamèche" class="pokemon-image">
+                        Salamèche
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pokémon Répertoire</p>
+    </footer>
+
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
