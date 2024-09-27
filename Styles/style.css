@@ -344,6 +344,7 @@ h2 {
 
     .pokemon-info {
         height: auto;
+        width: 10px;
     }
 
     .pokemon-info ul {
