@@ -347,6 +347,10 @@ h2 {
         width: 10px;
     }
 
+    .pokemon-info h2 {
+        font-size: 14px;
+    }
+
     .pokemon-info ul {
         height: auto;
         padding-top: .5rem;
