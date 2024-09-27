@@ -248,12 +248,16 @@ footer {
 
 .pokemon-info ul {
     font-size: 1.9rem;
-    padding-top: 3rem;
     list-style-type: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .pokemon-info {
     height: 395px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
 }
 
 .pokemon-image-info img {
@@ -325,6 +329,7 @@ h2 {
 
     .pokemon-info ul {
         height: auto;
-        padding-top: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
     }
 }
