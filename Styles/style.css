@@ -304,6 +304,17 @@ h2 {
     margin-bottom: 10px;
 }
 
+.pokemon-evolution-container img {
+    width: 250px;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+#fleche {
+    width: 180px;
+}
+
 @media (max-width: 1000px) {
     .pokemon-info ul {
         font-size: 14px; /* Taille de police réduite pour les écrans de 600px ou moins */
@@ -314,8 +325,8 @@ h2 {
     }
 
     .pokemon-container {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .pokemon-image-info img {
@@ -331,5 +342,13 @@ h2 {
         height: auto;
         padding-top: .5rem;
         padding-bottom: .5rem;
+    }
+
+    .pokemon-evolution-container img {
+        width: 100px;
+    }
+    
+    #fleche {
+        width: 50px;
     }
 }
