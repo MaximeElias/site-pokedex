@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff0000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-text {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: red;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.generations-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box-gen {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: auto;
+    cursor: pointer;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    overflow: hidden; 
+}
+
+.box-gen.expanded {
+    max-height: 50px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: left;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-container button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 12.5px 22.5px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.search-section {
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 50%;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+}
+
+.pokemon-list {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+.pokemon-list li {
+    display: inline-block;
+    align-items: center;
+    margin-left: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pokemon-list li:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-list a {
+    text-decoration: none;
+    color: #ff0000;
+    display: flex;
+    align-items: center;
+}
+
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.pokemon-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+}
+
+.type-box {
+    width: 420px;
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.type-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.type-box h2 {
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.type-box p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.type-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-image-info {
+    display: flex;                
+    justify-content: center;        
+    align-items: center; 
+}
+
+.pokemon-info ul {
+    font-size: 1.9rem;
+    list-style-type: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.pokemon-info {
+    height: 395px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-image-info img {
+    width: 350px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.pokemon-container {
+    display: flex;            
+    justify-content: space-between; 
+    align-items: flex-start;    
+    margin-bottom: 20px;        
+    flex: 1;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.pokemon-image-info,
+.pokemon-info,
+.pokemon-description,
+.pokemon-evolutions,
+.pokemon-forms {
+    flex: 1;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.important {
+    font-weight: bold;
+    color: red;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.pokemon-evolution-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    border-radius: 500px;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-evolution-container img {
+    width: 250px;     
+}
+
+#fleche {
+    width: 180px;
+}
+
+@media (max-width: 1000px) {
+    .pokemon-info ul {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .pokemon-container {
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .pokemon-image-info img {
+        width: 150px;
+        height: auto;
+    }
+
+    .pokemon-info {
+        height: auto;
+        width: 10px;
+    }
+
+    .pokemon-info h2 {
+        font-size: 12px;
+    }
+
+    .pokemon-info ul {
+        height: auto;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .pokemon-evolution-container img {
+        width: 100px;
+    }
+
+    .pokemon-evolution-container {
+        border-radius: 50px;
+    }
+    
+    #fleche {
+        width: 50px;
+    }
+}
